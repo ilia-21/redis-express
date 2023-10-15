@@ -1,0 +1,15 @@
+{
+  "name": "ilia21-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ilia21",
+  "license": "ISC",
+  "dependencies": {
+    "log-update": "^5.0.1",
+    "node-console-colors": "^1.1.5"
+  }
+}
