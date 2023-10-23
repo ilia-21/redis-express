@@ -74,8 +74,24 @@ Example response
 	"test": "Deleted"
 }
 ```
+## Authorization
+1. create `.env` file in root folder
+2. set `keyRequired` inside `config.json` to `true`
+
+Now every request will require Key header with valid key
+
+Example:
+```bash
+curl -X POST \
+  -H "Accept: application/json" \
+  -H "Content-type: application/json" \
+  -H "Key: MY_SECRET_KEY" \
+  -d '["test", "Hello World"]' \
+  "http://127.0.0.1/get"
+```
+
+
 # TODO
-- Authorization and keys
 - Other redis operations
 - - Lists
 - - Sets

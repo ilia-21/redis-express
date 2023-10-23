@@ -6,7 +6,6 @@ module.exports = {
         const { client } = require('../src/index');
         if (json.length <= 0) return res.status(400).json({ message: 'Invalid request.' })
         let resp = {}
-        i21.log(json)
         for (key of json) {
             try {
                 result = await client.del(key)
